@@ -11,7 +11,7 @@ export default async function getAvailablePets() {
       const li = document.createElement("li");
       const a = document.createElement("a");
       a.setAttribute("href", `https://petstore.swagger.io/v2/pet/${pet.id}`);
-      a.innerHTML = pet.name + " " + pet.id;
+      a.innerHTML = pet.name;
       li.appendChild(a);
       availablePets.appendChild(li);
     }

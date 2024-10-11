@@ -26,25 +26,31 @@
     <div class="container">
       <h1>Pet Store</h1>
       <form id="petForm">
-        <p>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" class="form-control" />
-        </p>
-        <p>
-          <label for="type">Type</label>
-          <select name="type" id="type" class="form-control">
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-          </select>
-        </p>
-        <p>
-          <label for="status">Status</label>
-          <select name="status" id="status" class="form-control">
-            <option value="available">Available</option>
-            <option value="pending">Pending</option>
-            <option value="sold">Sold</option>
-          </select>
-        </p>
+        <fieldset>
+          <legend>Add a new pet</legend>
+          <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-control" />
+          </p>
+          <p>
+            <label for="type">Type</label>
+            <select name="type" id="type" class="form-control">
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="hamster">Hamster</option>
+              <option value="bird">Bird</option>
+              <option value="fish">Fish</option>
+            </select>
+          </p>
+          <p>
+            <label for="status">Status</label>
+            <select name="status" id="status" class="form-control">
+              <option value="available">Available</option>
+              <option value="pending">Pending</option>
+              <option value="sold">Sold</option>
+            </select>
+          </p>
+        </fieldset>
         <p>
           <button>Submit</button>
         </p>
