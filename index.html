@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pet Store</h1>
+      <form id="petForm">
+        <p>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" class="form-control" />
+        </p>
+        <p>
+          <label for="type">Type</label>
+          <select name="type" id="type" class="form-control">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+          </select>
+        </p>
+        <p>
+          <label for="status">Status</label>
+          <select name="status" id="status" class="form-control">
+            <option value="available">Available</option>
+            <option value="pending">Pending</option>
+            <option value="sold">Sold</option>
+          </select>
+        </p>
+        <p>
+          <button>Submit</button>
+        </p>
+      </form>
+      <div id="results"></div>
+      <div id="details"></div>
+      <hr />
+      <p>
+        <button type="button" id="availablePets">Get all available pets</button>
+      </p>
+      <div class="row">
+        <div class="col-6">
+          <ul id="availablePetsList"></ul>
+        </div>
+        <div class="col-6">
+          <h3>Selected Pet Details</h3>
+          <div id="selectedPet"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
